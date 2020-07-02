@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>1.JavaScript Variables</h2>
+
+<p id="demo"></p>
+
+<script>
+var x = 5;
+var y = 6;
+var z = x + y;
+var x1 = 5 + 2 + 3;
+var carname=" Benzz";
+document.getElementById("demo").innerHTML =
+"The value of z is: " + z + "<br>"+
+"name of the car is:"+carname + "<br>" + "sum of x1 is: " +x1;
+</script>
+
+</body>
+
+<body>
+<h2>2.JavaScript Dataypes</h2>
+
+
+<p id="demo1"> </p>
+<script>
+ var x = "Volvo" + 16;
+ var x1 = 16 + "Volvo";
+ var y = 123e5;     
+var z = 123e-5;
+ document.getElementById("demo1").innerHTML =
+"The value of x is: " + x + "<br>"+"The value of x1is: " +x1 +"<br>"+
+"The value of x is: " + y + "<br>"+"The value of x1is: " +z;
+ </script>
+ </body>
+<body>
+
+<h2>3.JavaScript Booleans</h2>
+
+<p>Booleans can have two values: true or false:</p>
+
+<p id="demo2"></p>
+
+<script>
+var x = 5;
+var y = 5;
+var z = 6;
+var cars = ["Saab","Volvo","BMW"];
+document.getElementById("demo2").innerHTML =
+(x == y) + "<br>" + (x == z) +"<br>" + "the index 0 of the car is :"+cars[0]+
+typeof undefined + "<br>" +
+typeof null + "<br><br>" +
+(null === undefined) + "<br>" +
+(null == undefined);
+</script>
+
+</body>
+<body>
+
+<h2>4.JavaScript typeof</h2>
+<p>The typeof operator returns the type of a variable or an expression.</p>
+
+<p id="demo3"></p>
+
+<script>
+document.getElementById("demo3").innerHTML = 
+typeof "john" + "<br>" + 
+typeof 3.14 + "<br>" +
+typeof true + "<br>" +
+typeof false + "<br>" +
+typeof x;
+</script>
+
+</body>
+
+<body>
+
+<h2>5. Javascript Operator</h2>
+
+<p id="demo4"></p>
+
+<script>
+var x = 5;
+var y = 2;
+var z = x + y;
+var a=x-y;
+var b=x/y;
+var c=x*y;
+var g=x%y;
+var d=x--;
+var e=x++;
+var f=x**2;
+var txt1 = "What a very ";
+txt1 += "nice day";
+document.getElementById("demo4").innerHTML = 
+"Addition is :" +z +"<br>"+
+"Subtraction is :" +a +"<br>"+
+"division is :" +b +"<br>"+
+"Multiplication is :" +c +"<br>"+
+"Modulus is :" +g +"<br>"+
+"decreament is :" +d +"<br>"+
+"Increament is :" +e +"<br>"+
+"Exponentiation is :" +f +"<br>" + txt1;
+</script>
+
+</body>
+<body>
+
+<h2>6.JavaScript Functions</h2>
+
+<p>This example calls a function to convert from Fahrenheit to Celsius:</p>
+<p id="demo6"></p>
+
+<script>
+var x = myFunction(4, 3);
+function toCelsius(f)
+ {
+  return (5/9) * (f-32);
+}
+function myFunction(a, b) 
+{
+  w= a * b;
+}
+
+document.getElementById("demo6").innerHTML = toCelsius(77)+"<br>"
+ +"multiplication is:"+w;
+
+</script>
+</body>
+<body>
+
+<h2>7.JavaScript Regular Expressions</h2>
+
+<p>Search a string and display the position of the match:</p>
+
+<p id="demo7"></p>
+
+<script>
+var str = "srilakshmi_Lokesh"; 
+var n = str.search("Lokesh");
+document.getElementById("demo7").innerHTML = "searching Position: " +n;
+</script>
+
+</body>
+
+<body>
+
+<h2>8.JavaScript Math Object</h2>
+
+<p>Math Objects List</p>
+
+<p id="demo8"></p>
+
+<script>
+document.getElementById("demo8").innerHTML = "Round of function of 4.4: " +Math.round(4.4)+"<br>"+
+"power function of 8,2:  " +Math.pow(8,2) +"<br>"+
+"square root function of 64 : " +Math.sqrt(64)+ "<br>" +
+"Absolute function of -56.55: " +Math.abs(-56.55)+"<br>"+
+"Ceil function of 4.4: "+Math.ceil(4.4)+"<br>"+
+"Floor function of 4.7: " +Math.floor(4.7);
+
+
+</script >
+
+</body>
+<head>
+<script>
+function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>
+</head>
+<body>
+
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+  Name: <input type="text" name="fname">
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
+
+
