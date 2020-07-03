@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $.post("demo_test_post.asp",
+    {
+      name: "Donald Duck",
+      city: "Duckburg"
+    },
+    function(data,status){
+      alert("Data: " + data + "\nStatus: " + status);
+    });
+  });
+});
+</script>
+<title>jQuery Double Click</title>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("div").dblclick(function(){
+    $( this ).toggleClass("divClass2");
+  });
+});
+</script>
+ 
+<style> 
+.divClass1
+{
+    padding:5px;
+    text-align:center;
+    background-color:yellow;
+    border:solid 1px;
+}
+.divClass2
+{
+    padding:5px;
+    text-align:center;
+    background-color:grey;
+    border:solid 1px;
+}
+</style>
+</head>
+<body>
+<div class="divClass1">JournalDev</div><br><br>
+<button>Send an HTTP POST request to a page</button>
+</body
+</html>
